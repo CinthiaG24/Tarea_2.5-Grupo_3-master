@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94890096"
+    tools:context=".Activities.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/latitud"
+        android:layout_width="361dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="#08070C3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/longitud"
+        android:layout_width="361dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/latitud"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/latitud">
+
+    </FrameLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapa"
+        android:name="androidx.appcompat.app.AppCompatDialogFragment"
+        android:layout_width="354dp"
+        android:layout_height="332dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/longitud"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="659dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fh"
+        android:layout_width="268dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapa"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/Fecha"
+        android:layout_width="55dp"
+        android:layout_height="27dp"
+        android:text="Fecha"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <TextView
+        android:id="@+id/Hora"
+        android:layout_width="57dp"
+        android:layout_height="25dp"
+        android:text="Hora"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
